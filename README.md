@@ -43,7 +43,7 @@ No external APIs. No databases. No build tools. Just Python and a browser.
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/ground-station-pass-predictor.git
+git clone https://github.com/devamayookha/ground-station-pass-predictor.git
 cd ground-station-pass-predictor
 ```
 
@@ -107,6 +107,12 @@ ground_station_predictor/
 
 ## About
 
-Built as part of an AI × Space Technology portfolio series by a 2nd year B.Tech AI & Data Science student.
+Built as part of an AI × Space Technology portfolio series.
+
+## 👤 Author
+
+**B.R Devamayookha** – 2nd-year B.Tech AI & Data Science student
+
+[GitHub](https://github.com/devamayookha)
 
 Educational project — free to use and modify.

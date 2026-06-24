@@ -84,14 +84,14 @@ http://127.0.0.1:5000
 
 ## Project Structure
 ground_station_predictor/
-
-├── app.py          # Flask server
-
-├── orbit_model.py  # Orbital mechanics logic
-
+├── app.py
+├── orbit_model.py
+├── requirements.txt
+├── Procfile
+├── .gitignore
 ├── README.md
-
-└── .gitignore
+└── screenshots/
+    └── screenshot.png
 
 ---
 
@@ -111,8 +111,10 @@ Built as part of an AI × Space Technology portfolio series.
 
 ## 👤 Author
 
-**B.R Devamayookha** – 2nd-year B.Tech AI & Data Science student
+## 👤 Author
 
-[GitHub](https://github.com/devamayookha)
+**B.R Devamayookha** – 2nd-year B.Tech AI & Data Science student (Sona College Of Technology)
+
+[GitHub](https://github.com/devamayookha) • [LinkedIn](https://linkedin.com/in/b-r-devamayookha-627305375) 
 
 Educational project — free to use and modify.

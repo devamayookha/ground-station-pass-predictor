@@ -109,7 +109,6 @@ ground_station_predictor/
 
 Built as part of an AI × Space Technology portfolio series.
 
-## 👤 Author
 
 ## 👤 Author
 

@@ -98,7 +98,6 @@ ground_station_predictor/
 ├── README.md
 
 └── screenshots/
-
     └── screenshot.png
 
 ---

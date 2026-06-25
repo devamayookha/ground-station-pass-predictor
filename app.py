@@ -12,7 +12,7 @@ HTML_PAGE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satellite Pass Predictor</title>
+    <title>Ground Station Pass Predictor</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -297,7 +297,7 @@ HTML_PAGE = """
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Basic client-side check (duplicates server validation for faster feedback)
+        // Basic client-side check
         const lat = parseFloat(form.lat.value);
         const lon = parseFloat(form.lon.value);
         const alt = parseFloat(form.alt.value);
@@ -321,7 +321,6 @@ HTML_PAGE = """
             showError('Time range cannot exceed 7 days.'); return;
         }
 
-        // Hide previous error, show loading state
         errorBox.style.display = 'none';
         resultSection.style.display = 'none';
         submitBtn.disabled = true;

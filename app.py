@@ -1,8 +1,8 @@
 # app.py
 from flask import Flask, request, jsonify
-import os
 from datetime import datetime, timezone, timedelta
 from orbit_model import predict_passes
+import os
 
 app = Flask(__name__)
 
@@ -222,37 +222,37 @@ HTML_PAGE = """
         <div class="form-row">
             <div class="form-group">
                 <label>📍 Station Latitude (°N)</label>
-                <input name="lat" type="number" step="any" required value="51.5" min="-90" max="90">
+                <input name="lat" type="number" step="any" required min="-90" max="90">
             </div>
             <div class="form-group">
                 <label>📍 Station Longitude (°E)</label>
-                <input name="lon" type="number" step="any" required value="-0.1" min="-180" max="180">
+                <input name="lon" type="number" step="any" required min="-180" max="180">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group">
                 <label>🛸 Satellite Altitude (km)</label>
-                <input name="alt" type="number" step="any" required value="400" min="160" max="2000000">
+                <input name="alt" type="number" step="any" required min="160" max="2000000">
             </div>
             <div class="form-group">
                 <label>📐 Inclination (°)</label>
-                <input name="inc" type="number" step="any" required value="51.6" min="0" max="180">
+                <input name="inc" type="number" step="any" required min="0" max="180">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group">
                 <label>⏱️ Start Time (UTC)</label>
-                <input name="start_time" type="datetime-local" required value="2026-06-24T12:00">
+                <input name="start_time" type="datetime-local" required>
             </div>
             <div class="form-group">
                 <label>⏱️ End Time (UTC)</label>
-                <input name="end_time" type="datetime-local" required value="2026-06-24T14:00">
+                <input name="end_time" type="datetime-local" required>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group">
                 <label>🔄 Initial Mean Anomaly (°)</label>
-                <input name="M0" type="number" step="any" value="45" min="0" max="360">
+                <input name="M0" type="number" step="any" min="0" max="360">
             </div>
             <div class="form-group" style="display: flex; align-items: flex-end;">
                 <button type="submit" id="submit-btn">🔍 Predict Passes</button>
@@ -561,10 +561,6 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    lat, lon, alt, inc, start_time, end_time, M0 = validate_input(request.form)
-    if lat is None:
-        return jsonify({'error': '; '.join(start_time)})  # start_time holds errors list
-    # Actually handle it properly:
     validation = validate_input(request.form)
     if validation[0] is None:
         errors = validation[-1]

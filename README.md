@@ -83,23 +83,18 @@ http://127.0.0.1:5000
 ---
 
 ## Project Structure
+
+```
 ground_station_predictor/
-
 ├── app.py
-
 ├── orbit_model.py
-
 ├── requirements.txt
-
 ├── Procfile
-
 ├── .gitignore
-
 ├── README.md
-
 └── screenshots/
-
     └── screenshot.png
+```
 
 ---
 

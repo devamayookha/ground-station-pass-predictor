@@ -108,11 +108,6 @@ ground_station_predictor/
 
 ---
 
-## About
-
-Built as part of an AI × Space Technology portfolio series.
-
-
 ## 👤 Author
 
 **B.R Devamayookha** – 2nd-year B.Tech AI & Data Science student (Sona College Of Technology)
